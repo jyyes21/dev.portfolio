@@ -8,27 +8,34 @@
   <title>Portfolio - Jonas</title>
   <script src="particles.js" defer></script>
   <script src="app.js" defer></script>
+  <nav id="navbar" class="z-50 fixed top-0 left-0 w-full text-white p-4 transition-transform duration-300 ease-in-out transform ">
+
+        <div class="z-9999 container bg-blue-600 mx-auto flex justify-between mx-auto px-[50px] py-4 rounded-[60px] w-[500px] hover:bg-blue-700 duration-300 hover:scale-[1.005]">
+            <!-- Bouton pour faire défiler vers la section "À propos de moi" -->
+            <a href="#apropos" class="text-xl font-bold hover:bg-blue-600 px-4 py-2 duration-300 rounded-[20px] hover:shadow-inner">À propos</a>
+            <!-- Bouton pour faire défiler vers la section "Mes projets" -->
+            <a href="#projets" class="text-xl font-bold hover:bg-blue-600 px-4 py-2 duration-300 rounded-[20px] hover:shadow-inner">Projets</a>
+            <!-- Bouton pour faire défiler vers la section "Contactez-moi" -->
+            <a href="#contact" class="text-xl font-bold hover:bg-blue-600 px-4 py-2 duration-300 rounded-[20px] hover:shadow-inner">Contact</a>
+        </div>
+    </nav>
+
+
+
 </head>
-<body class="bg-gray-100">
+<body class="bg-gradient-to-r from-blue-100 to-purple-100">
+  <div class="w-5/6  mx-auto drop-shadow-[0_5px_15px_rgba(0,0,0,0.20)] bg-gray-100 rounded-[80px]">
+
+  <div class="z-0 opacity-10 overflow-hidden bg-[url('https://cdn.discordapp.com/attachments/1130776962495950940/1131654995931037838/growth_10364222.png')] absolute  -left-[44px] top-[120px] w-[900px] h-[655px] bg-cover">
+  </div>
   
-  <!-- Barre de navigation -->
-  <nav class=" p-8 text-white ">
-      <div class="container bg-blue-600 mx-auto flex justify-between mx-auto px-[50px] py-4 rounded-[60px] w-[500px] hover:bg-blue-700 duration-300 hover:scale-[1.005]">
-          <!-- Bouton pour faire défiler vers la section "À propos de moi" -->
-          <a href="#apropos" class="text-xl font-bold hover:bg-blue-600 px-4 py-2 duration-300 rounded-[20px] hover:shadow-inner">À propos</a>
-          <!-- Bouton pour faire défiler vers la section "Mes projets" -->
-          <a href="#projets" class="text-xl font-bold hover:bg-blue-600 px-4 py-2 duration-300 rounded-[20px] hover:shadow-inner">Projets</a>
-          <!-- Bouton pour faire défiler vers la section "Contactez-moi" -->
-          <a href="#contact" class="text-xl font-bold hover:bg-blue-600 px-4 py-2 duration-300 rounded-[20px] hover:shadow-inner">Contact</a>
-      </div>
-  </nav>
 
   <!-- Section de présentation -->
-  <section id="apropos" class="py-40 w-5/6 mx-auto flex">
-    <div class="flex flex-col w-1/2">
-      <div class="flex flex-col  leading-[65px] mt-8">
-        <p class="z-0 text-[100px] font-bold text-blue-600 tracking-[.04em]">JONAS</p>
-        <p class="tracking-[.40em] text-[28px]">Développeur full stack</p>
+  <section id="apropos" class="z-2 py-40 px-8 mx-auto flex pt-[300px]">
+    <div class="flex flex-col w-1/2 pl-4">
+      <div class="flex flex-col  leading-[70px] mt-8">
+        <p class="z-2 text-[100px] font-bold text-blue-600 tracking-[.04em]">JONAS</p>
+        <p class="z-2 tracking-[.40em] text-[28px]">Développeur full stack</p>
       </div>
     </div>
       <div class=" mx-auto w-1/2 ">
@@ -46,7 +53,7 @@
   </section>
 
   <!-- Section de projets -->
-  <section id="projets" class="py-10 bg-white">
+  <section id="projets" class="py-10 bg-white px-20">
       <div class="container mx-auto">
           <h2 class="text-3xl font-bold mb-4">Mes projets</h2>
           <!-- Remplacez les exemples de projets par vos propres projets -->
@@ -64,7 +71,7 @@
   </section>
 
   <!-- Section de contact -->
-  <section id="contact" class="py-10">
+  <section id="contact" class="py-10 px-20 h-[3000px]">
       <div class="container mx-auto">
           <h2 class="text-3xl font-bold mb-4">Contactez-moi</h2>
           <p class="text-gray-700">Vous pouvez me contacter par e-mail à l'adresse suivante : <a class="select-all">jonas.garnero@gmail.com</a></p>
@@ -76,5 +83,7 @@
       </div>
   </section>
   
+  <script src="script.js"></script>
+</div>
 </body>
 </html>
