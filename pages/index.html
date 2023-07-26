@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="script.js"></script>
+
   <title>Portfolio - Jonas</title>
-  <script src="particles.js" defer></script>
-  <script src="app.js" defer></script>
   <nav id="navbar" class="z-50 fixed top-0 left-0 w-full text-white p-4 transition-transform duration-300 ease-in-out transform ">
 
         <div class="z-9999 container bg-blue-600 mx-auto flex justify-between mx-auto px-[50px] py-4 rounded-[60px] w-[500px] hover:bg-blue-700 duration-300 hover:scale-[1.005]">
@@ -23,7 +22,7 @@
 
 
 </head>
-<body class="bg-gradient-to-r from-blue-100 to-purple-100">
+<body class="bg-gradient-to-tl from-purple-200 to-blue-200">
   <div class="w-5/6  mx-auto drop-shadow-[0_5px_15px_rgba(0,0,0,0.20)] bg-gray-100 rounded-[80px]">
 
   <div class="z-0 opacity-10 overflow-hidden bg-[url('https://cdn.discordapp.com/attachments/1130776962495950940/1131654995931037838/growth_10364222.png')] absolute  -left-[44px] top-[120px] w-[900px] h-[655px] bg-cover">
@@ -31,59 +30,206 @@
   
 
   <!-- Section de présentation -->
-  <section id="apropos" class="z-2 py-40 px-8 mx-auto flex pt-[300px]">
+  <section id="apropos" class="z-2 py-40 px-8 h-[775px] mx-auto flex pt-[300px]">
     <div class="flex flex-col w-1/2 pl-4">
       <div class="flex flex-col  leading-[70px] mt-8">
         <p class="z-2 text-[100px] font-bold text-blue-600 tracking-[.04em]">JONAS</p>
         <p class="z-2 tracking-[.40em] text-[28px]">Développeur full stack</p>
       </div>
     </div>
-      <div class=" mx-auto w-1/2 ">
-        <div class="drop-shadow-[0_5px_15px_rgba(0,0,0,0.20)] bg-white flex flex-col max-w-[600px] px-20 py-12 mx-auto rounded-[40px]">
-          <h2 class="text-3xl font-bold mb-4">À propos de moi</h2>
-          <div class="">
-              <p class="text-gray-700 text-justify max-w-[500px]">
-              Je suis Jonas Garnero, un développeur Full Stack en BTS SIO. Passionné par la technologie, je crée des applications web fonctionnelles et attrayantes. Toujours avide de défis techniques, je suis constamment à l'affût des dernières tendances en développement. Prêt à collaborer dans un environnement dynamique, je suis ouvert aux opportunités passionnantes.
-              
-              </p>
-      </div>
-    </div>
-      </div>
+      
       
   </section>
 
+
+
+<section class="py-10 bg-white px-20 mb-6 ">
+
+  <div class=" mx-auto w-1/2 ">
+    <div class="drop-shadow-[0_5px_15px_rgba(0,0,0,0.20)] bg-white flex flex-col max-w-[600px] px-20 py-12 mx-auto rounded-[40px]">
+      <h2 class="text-3xl font-bold mb-4">À propos de moi</h2>
+      <div class="">
+          <p class="text-gray-700 text-justify max-w-[500px]">
+          Je suis Jonas Garnero, un développeur Full Stack en BTS SIO. Passionné par la technologie, je crée des applications web fonctionnelles et attrayantes. Toujours avide de défis techniques, je suis constamment à l'affût des dernières tendances en développement. Prêt à collaborer dans un environnement dynamique, je suis ouvert aux opportunités passionnantes.
+          </p>
+        </div>
+      </div>
+     </div>
+
+</section>
+
+
+
   <!-- Section de projets -->
-  <section id="projets" class="py-10 bg-white px-20">
+  <section id="projets" class="py-10 px-20 mb-6">
       <div class="container mx-auto">
-          <h2 class="text-3xl font-bold mb-4">Mes projets</h2>
+          <h2 class="text-3xl font-bold mb-4 ">Mes projets</h2>
           <!-- Remplacez les exemples de projets par vos propres projets -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div class="bg-gray-200 p-4 rounded-lg">
-                  <h3 class="text-xl font-bold mb-2">Projet 1</h3>
-                  <p>Description du projet 1</p>
+
+
+
+              <div class="bg-gradient-to-bl from-red-300 to-purple-300 p-4 rounded-lg space-y-4">
+                <div class="bg-blue-200 rounded-[20px] py-8 px-6 drop-shadow-[0_35px_35px_rgba(0,0,0,0.15)]">
+                  <p class="text-xl font-bold mb-2">Creation site web - OPKOD</p>
+                  <p class="text-justify">
+                    <a class="text-[18px]">Projet Web d'Entreprise :</a> <br>
+J'ai développé un site web pour mon entreprise en utilisant HTML,
+ Tailwind CSS et JavaScript. Plateforme moderne et intuitive,
+  le site reflète l'image professionnelle de l'entreprise avec
+   une expérience utilisateur fluide. En tant que développeur 
+   full stack, j'ai intégré des fonctionnalités dynamiques pour
+    améliorer les performances globales du site. Fier de contribuer
+     à l'identité en ligne de l'entreprise grâce à ce projet.
+
+                  </p>
+                </div>
+                  <div class="relative overflow-hidden pb-9/16 rounded-[23px] bg-blue-200 p-1 hover:bg-yellow-300 duration-500 " id="video-container" onmouseover="playVideoOpkod()" onmouseout="pauseVideoOpkod()">
+                    <!-- Remplacez 'votre_url_video.mp4' par l'URL réelle de votre vidéo -->
+                    <video class="rounded-[20px] h-full w-full object-cover" id="video-opkod" >
+                      <source src="../Media/Video/Opkod-site-projet.mp4" type="video/mp4">
+                    </video>
+                  </div>
+
+                  <div class="bg-white shadow-inner  rounded-[20px]">
+                    <div class="flex justify-center item-center justify-around mx-auto w-5/6 py-3">
+                    <div class="h-[70px] w-[70px]">
+                      <svg viewBox="0 -51 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <linearGradient x1="-2.77777778%" y1="32%" x2="100%" y2="67.5555556%" id="linearGradient-1"> <stop stop-color="#2298BD" offset="0%"> </stop> <stop stop-color="#0ED7B5" offset="100%"> </stop> </linearGradient> </defs> <g> <path d="M128,-1.0658141e-14 C93.8666667,-1.0658141e-14 72.5333333,17.0666667 64,51.2 C76.8,34.1333333 91.7333333,27.7333333 108.8,32 C118.537481,34.4343704 125.497363,41.4985481 133.201067,49.3184 C145.750756,62.0567704 160.275437,76.8 192,76.8 C226.133333,76.8 247.466667,59.7333333 256,25.6 C243.2,42.6666667 228.266667,49.0666667 211.2,44.8 C201.462519,42.3656296 194.502637,35.3014519 186.798933,27.4816 C174.249244,14.7432296 159.724563,-1.0658141e-14 128,-1.0658141e-14 Z M64,76.8 C29.8666667,76.8 8.53333333,93.8666667 0,128 C12.8,110.933333 27.7333333,104.533333 44.8,108.8 C54.5374815,111.23437 61.497363,118.298548 69.2010667,126.1184 C81.7507556,138.85677 96.275437,153.6 128,153.6 C162.133333,153.6 183.466667,136.533333 192,102.4 C179.2,119.466667 164.266667,125.866667 147.2,121.6 C137.462519,119.16563 130.502637,112.101452 122.798933,104.2816 C110.249244,91.5432296 95.724563,76.8 64,76.8 Z" fill="url(#linearGradient-1)"> </path> </g> </g></svg>
+                      
+                    </div>
+                    <div class="h-[70px] w-[70px]">
+                      <svg xmlns="http://www.w3.org/2000/svg" aria-label="JavaScript" role="img" viewBox="0 0 512 512" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><rect width="512" height="512" rx="15%" fill="#f7df1e"></rect><path d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z"></path></g></svg>
+                    </div>
+                    <div class="h-[70px] w-[70px]">
+                      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path> <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path> </g></svg>
+                    </div>
+                    <div class="h-[70px] w-[70px]">
+                      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2.58536 17.4132C1.80488 16.6327 1.80488 15.3673 2.58536 14.5868L14.5868 2.58536C15.3673 1.80488 16.6327 1.80488 17.4132 2.58536L29.4146 14.5868C30.1951 15.3673 30.1951 16.6327 29.4146 17.4132L17.4132 29.4146C16.6327 30.1951 15.3673 30.1951 14.5868 29.4146L2.58536 17.4132Z" fill="#EE513B"></path> <path d="M12.1489 5.06152L10.9336 6.27686L14.0725 9.41577C13.9455 9.68819 13.8746 9.99201 13.8746 10.3124C13.8746 11.222 14.4461 11.9981 15.2496 12.3012V19.9798C14.4461 20.2829 13.8746 21.059 13.8746 21.9686C13.8746 23.1422 14.826 24.0936 15.9996 24.0936C17.1732 24.0936 18.1246 23.1422 18.1246 21.9686C18.1246 21.144 17.6549 20.429 16.9684 20.0768V12.3117L19.9689 15.3122C19.8481 15.5791 19.7809 15.8754 19.7809 16.1874C19.7809 17.361 20.7323 18.3124 21.9059 18.3124C23.0795 18.3124 24.0309 17.361 24.0309 16.1874C24.0309 15.0138 23.0795 14.0624 21.9059 14.0624C21.6778 14.0624 21.4582 14.0983 21.2522 14.1648L18.0297 10.9423C18.0914 10.7433 18.1246 10.5317 18.1246 10.3124C18.1246 9.13878 17.1732 8.18738 15.9996 8.18738C15.7803 8.18738 15.5688 8.22061 15.3697 8.2823L12.1489 5.06152Z" fill="white"></path> </g></svg>
+                    </div>
+                  
+                  </div>
+                  </div>
               </div>
-              <div class="bg-gray-200 p-4 rounded-lg">
-                  <h3 class="text-xl font-bold mb-2">Projet 2</h3>
-                  <p>Description du projet 2</p>
+
+
+
+              <div class="bg-gradient-to-bl from-green-300 to-orange-300 p-4 rounded-lg space-y-4">
+                <div class="bg-blue-200 rounded-[20px] py-8 px-6 drop-shadow-[0_35px_35px_rgba(0,0,0,0.15)]">
+                  <p class="text-xl font-bold mb-2">Creation site web - Troc ta plante</p>
+                  <p class="text-justify">
+                    <a class="text-[18px]">Projet Web d'Entreprise :</a> <br>
+J'ai développé un site web pour mon entreprise en utilisant HTML,
+ Tailwind CSS et JavaScript. Plateforme moderne et intuitive,
+  le site reflète l'image professionnelle de l'entreprise avec
+   une expérience utilisateur fluide. En tant que développeur 
+   full stack, j'ai intégré des fonctionnalités dynamiques pour
+    améliorer les performances globales du site. Fier de contribuer
+     à l'identité en ligne de l'entreprise grâce à ce projet.
+
+                  </p>
+                </div>
+                  <div class="relative overflow-hidden pb-9/16 rounded-[23px] bg-blue-200 p-1 hover:bg-yellow-300 duration-500 " id="video-container" onmouseover="playVideoTroc()" onmouseout="pauseVideoTroc()">
+                    <!-- Remplacez 'votre_url_video.mp4' par l'URL réelle de votre vidéo -->
+                    <video class="rounded-[20px] h-full w-full object-cover" id="video-Troc" >
+                      <source src="../Media/Video/Troc-site-projet.mp4" type="video/mp4">
+                    </video>
+                  </div>
+
+                  <div class="bg-white shadow-inner  rounded-[20px]">
+                    <div class="flex justify-center item-center justify-around mx-auto w-5/6 py-3">
+                    <div class="h-[70px] w-[70px]">
+                      <svg viewBox="0 -51 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <linearGradient x1="-2.77777778%" y1="32%" x2="100%" y2="67.5555556%" id="linearGradient-1"> <stop stop-color="#2298BD" offset="0%"> </stop> <stop stop-color="#0ED7B5" offset="100%"> </stop> </linearGradient> </defs> <g> <path d="M128,-1.0658141e-14 C93.8666667,-1.0658141e-14 72.5333333,17.0666667 64,51.2 C76.8,34.1333333 91.7333333,27.7333333 108.8,32 C118.537481,34.4343704 125.497363,41.4985481 133.201067,49.3184 C145.750756,62.0567704 160.275437,76.8 192,76.8 C226.133333,76.8 247.466667,59.7333333 256,25.6 C243.2,42.6666667 228.266667,49.0666667 211.2,44.8 C201.462519,42.3656296 194.502637,35.3014519 186.798933,27.4816 C174.249244,14.7432296 159.724563,-1.0658141e-14 128,-1.0658141e-14 Z M64,76.8 C29.8666667,76.8 8.53333333,93.8666667 0,128 C12.8,110.933333 27.7333333,104.533333 44.8,108.8 C54.5374815,111.23437 61.497363,118.298548 69.2010667,126.1184 C81.7507556,138.85677 96.275437,153.6 128,153.6 C162.133333,153.6 183.466667,136.533333 192,102.4 C179.2,119.466667 164.266667,125.866667 147.2,121.6 C137.462519,119.16563 130.502637,112.101452 122.798933,104.2816 C110.249244,91.5432296 95.724563,76.8 64,76.8 Z" fill="url(#linearGradient-1)"> </path> </g> </g></svg>
+                      
+                    </div>
+                    
+                    <div class="h-[70px] w-[70px]">
+                      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path> <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path> </g></svg>
+                    </div>
+                    <div class="h-[70px] w-[70px]">
+                      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2.58536 17.4132C1.80488 16.6327 1.80488 15.3673 2.58536 14.5868L14.5868 2.58536C15.3673 1.80488 16.6327 1.80488 17.4132 2.58536L29.4146 14.5868C30.1951 15.3673 30.1951 16.6327 29.4146 17.4132L17.4132 29.4146C16.6327 30.1951 15.3673 30.1951 14.5868 29.4146L2.58536 17.4132Z" fill="#EE513B"></path> <path d="M12.1489 5.06152L10.9336 6.27686L14.0725 9.41577C13.9455 9.68819 13.8746 9.99201 13.8746 10.3124C13.8746 11.222 14.4461 11.9981 15.2496 12.3012V19.9798C14.4461 20.2829 13.8746 21.059 13.8746 21.9686C13.8746 23.1422 14.826 24.0936 15.9996 24.0936C17.1732 24.0936 18.1246 23.1422 18.1246 21.9686C18.1246 21.144 17.6549 20.429 16.9684 20.0768V12.3117L19.9689 15.3122C19.8481 15.5791 19.7809 15.8754 19.7809 16.1874C19.7809 17.361 20.7323 18.3124 21.9059 18.3124C23.0795 18.3124 24.0309 17.361 24.0309 16.1874C24.0309 15.0138 23.0795 14.0624 21.9059 14.0624C21.6778 14.0624 21.4582 14.0983 21.2522 14.1648L18.0297 10.9423C18.0914 10.7433 18.1246 10.5317 18.1246 10.3124C18.1246 9.13878 17.1732 8.18738 15.9996 8.18738C15.7803 8.18738 15.5688 8.22061 15.3697 8.2823L12.1489 5.06152Z" fill="white"></path> </g></svg>
+                    </div>
+                  
+                  </div>
+                  </div>
               </div>
+
+
+
+
           </div>
       </div>
   </section>
 
   <!-- Section de contact -->
-  <section id="contact" class="py-10 px-20 h-[3000px]">
-      <div class="container mx-auto">
-          <h2 class="text-3xl font-bold mb-4">Contactez-moi</h2>
-          <p class="text-gray-700">Vous pouvez me contacter par e-mail à l'adresse suivante : <a class="select-all">jonas.garnero@gmail.com</a></p>
-          <p>Voici mes reseaux :</p>
-          <div class="flex">
-            <a class="" href="https://www.linkedin.com/in/jonas-garnero-9ab3a9241/"><svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
-            <a class="" href="https://github.com/jyyes21"><svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+  <section id="contact" class="bg-white py-10 px-20 flex h-[3000px]">
+      
+    
+      <div class=" rounded-[25px] mx-auto w-7/8 relative">
+        <div class="drop-shadow-[0_35px_35px_rgba(0,0,0,0.8)] duration-300 left-1/2 transform -translate-x-1/2 absolute z-0 w-[800px] h-[800px] bg-contain bg-[url('https://cdn.pixabay.com/photo/2017/10/15/16/20/iphone-2854305_1280.png')]">
+        </div>
+
+        <div class=" w-[330px] h-[30px] mr-[6px] mt-[28px] relative z-50">
+              <div class="flex justify-between">
+                <div class="text-[20px] pl-3 font-semibold text-white">
+                  <span id="heure"></span>
+                </div>
+                <div class="flex space-x-1 items-center justify-center pr-4  h-full">
+                  <div class="w-[15px] h-[15px] ">
+                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="m 13 1 c -0.554688 0 -1 0.445312 -1 1 v 12 c 0 0.554688 0.445312 1 1 1 h 1 c 0.554688 0 1 -0.445312 1 -1 v -12 c 0 -0.554688 -0.445312 -1 -1 -1 z m -4 3 c -0.554688 0 -1 0.445312 -1 1 v 9 c 0 0.554688 0.445312 1 1 1 h 1 c 0.554688 0 1 -0.445312 1 -1 v -9 c 0 -0.554688 -0.445312 -1 -1 -1 z m -4 3 c -0.554688 0 -1 0.445312 -1 1 v 6 c 0 0.554688 0.445312 1 1 1 h 1 c 0.554688 0 1 -0.445312 1 -1 v -6 c 0 -0.554688 -0.445312 -1 -1 -1 z m -4 3 c -0.554688 0 -1 0.445312 -1 1 v 3 c 0 0.554688 0.445312 1 1 1 h 1 c 0.554688 0 1 -0.445312 1 -1 v -3 c 0 -0.554688 -0.445312 -1 -1 -1 z m 0 0" fill="#ffffff"></path> </g></svg>
+                  
+                    </svg>
+                  </div>
+                  <div class="w-[25px] h-[25px] mb-2">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12.0002 19C11.4479 19 11.0002 19.4477 11.0002 20C11.0002 20.5523 11.4479 21 12.0002 21V19ZM12.0102 21C12.5625 21 13.0102 20.5523 13.0102 20C13.0102 19.4477 12.5625 19 12.0102 19V21ZM14.6907 17.04C15.0993 17.4116 15.7317 17.3817 16.1033 16.9732C16.475 16.5646 16.445 15.9322 16.0365 15.5605L14.6907 17.04ZM18.0541 13.3403C18.4626 13.7119 19.0951 13.682 19.4667 13.2734C19.8384 12.8649 19.8084 12.2324 19.3999 11.8608L18.0541 13.3403ZM7.96394 15.5605C7.55539 15.9322 7.52546 16.5646 7.89708 16.9732C8.26871 17.3817 8.90117 17.4116 9.30971 17.04L7.96394 15.5605ZM4.60055 11.8608C4.192 12.2324 4.16207 12.8649 4.53369 13.2734C4.90532 13.682 5.53778 13.7119 5.94633 13.3403L4.60055 11.8608ZM12.0002 21H12.0102V19H12.0002V21ZM12.0002 16C13.0369 16 13.9795 16.3931 14.6907 17.04L16.0365 15.5605C14.9715 14.5918 13.5538 14 12.0002 14V16ZM12.0002 11C14.3321 11 16.4548 11.8855 18.0541 13.3403L19.3999 11.8608C17.4468 10.0842 14.8489 9 12.0002 9V11ZM9.30971 17.04C10.0209 16.3931 10.9635 16 12.0002 16V14C10.4466 14 9.02893 14.5918 7.96394 15.5605L9.30971 17.04ZM5.94633 13.3403C7.54565 11.8855 9.66836 11 12.0002 11V9C9.15148 9 6.55365 10.0842 4.60055 11.8608L5.94633 13.3403Z" fill="#ffffff"></path> </g></svg>
+                  
+                    </svg>
+                  </div>
+                </div>
+
+              </div>
+        </div>
+        <div>
+          <div class="relative  mt-[70px]">
+            <p class="text-[45px] text-white flex item-center justify-center font-semibold mb-4">Contact</p>
+          </div>
+        </div>
+          <div class="mt-[60px] mx-auto justify-center relative z-2 flex-col space-y-[50px] flex items-center justify-center">
+            <div class="flex-col space-y-[50px] flex items-center justify-center bg-white/40 p-6 rounded-[25px] drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)] backdrop-blur-[5px] ">
+            <div class="flex space-x-[60px]">
+            <div class="w-[80px] h-[80px] bg-gray-100/50 p-2 rounded-[20px]  hover:scale-[1.1] duration-300 hover:bg-blue-200/60">
+              <a target="_blank" href="https://github.com/jyyes21">
+              <svg viewBox="0 0 73 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#2f3051" stroke="#2f3051"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>team-collaboration/version-control/github</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="team-collaboration/version-control/github" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="container" transform="translate(2.000000, 2.000000)" fill-rule="nonzero"> <rect id="mask" stroke="#383050" stroke-width="2" fill="#383050" x="-1" y="-1" width="71" height="71" rx="14"> </rect> <path d="M58.3067362,21.4281798 C55.895743,17.2972267 52.6253846,14.0267453 48.4948004,11.615998 C44.3636013,9.20512774 39.8535636,8 34.9614901,8 C30.0700314,8 25.5585181,9.20549662 21.4281798,11.615998 C17.2972267,14.0266224 14.0269912,17.2972267 11.615998,21.4281798 C9.20537366,25.5590099 8,30.0699084 8,34.9607523 C8,40.8357654 9.71405782,46.1187277 13.1430342,50.8109917 C16.5716416,55.5036246 21.0008949,58.7507436 26.4304251,60.5527176 C27.0624378,60.6700211 27.5302994,60.5875152 27.8345016,60.3072901 C28.1388268,60.0266961 28.290805,59.6752774 28.290805,59.2545094 C28.290805,59.1842994 28.2847799,58.5526556 28.2730988,57.3588401 C28.2610487,56.1650247 28.2553926,55.1235563 28.2553926,54.2349267 L27.4479164,54.3746089 C26.9330843,54.468919 26.2836113,54.5088809 25.4994975,54.4975686 C24.7157525,54.4866252 23.9021284,54.4044881 23.0597317,54.2517722 C22.2169661,54.1004088 21.4330982,53.749359 20.7075131,53.1993604 C19.982297,52.6493618 19.4674649,51.9294329 19.1631397,51.0406804 L18.8120898,50.2328353 C18.5780976,49.6950097 18.2097104,49.0975487 17.7064365,48.4426655 C17.2031625,47.7871675 16.6942324,47.3427912 16.1794003,47.108799 L15.9336039,46.9328437 C15.7698216,46.815909 15.6178435,46.6748743 15.4773006,46.511215 C15.3368806,46.3475556 15.2317501,46.1837734 15.1615401,46.0197452 C15.0912072,45.855594 15.1494901,45.7209532 15.3370036,45.6153308 C15.5245171,45.5097084 15.8633939,45.4584343 16.3551097,45.4584343 L17.0569635,45.5633189 C17.5250709,45.6571371 18.104088,45.9373622 18.7947525,46.4057156 C19.4850481,46.8737001 20.052507,47.4821045 20.4972521,48.230683 C21.0358155,49.1905062 21.6846737,49.9218703 22.4456711,50.4251443 C23.2060537,50.9284182 23.9727072,51.1796248 24.744894,51.1796248 C25.5170807,51.1796248 26.1840139,51.121096 26.7459396,51.0046532 C27.3072505,50.8875956 27.8338868,50.7116403 28.3256025,50.477771 C28.5362325,48.9090515 29.1097164,47.7039238 30.0455624,46.8615271 C28.7116959,46.721353 27.5124702,46.5102313 26.4472706,46.2295144 C25.3826858,45.9484285 24.2825656,45.4922482 23.1476478,44.8597436 C22.0121153,44.2280998 21.0701212,43.44374 20.3214198,42.5080169 C19.5725954,41.571802 18.9580429,40.3426971 18.4786232,38.821809 C17.9989575,37.300306 17.7590632,35.5451796 17.7590632,33.5559381 C17.7590632,30.7235621 18.6837199,28.3133066 20.5326645,26.3238191 C19.6665366,24.1944035 19.7483048,21.8072644 20.778215,19.1626478 C21.4569523,18.951772 22.4635002,19.1100211 23.7973667,19.6364115 C25.1314792,20.1630477 26.1082708,20.6141868 26.7287253,20.9882301 C27.3491798,21.3621504 27.8463057,21.6790175 28.2208409,21.9360032 C30.3978419,21.3277217 32.644438,21.0235195 34.9612442,21.0235195 C37.2780503,21.0235195 39.5251383,21.3277217 41.7022622,21.9360032 L43.0362517,21.0938524 C43.9484895,20.5319267 45.0257392,20.0169716 46.2654186,19.5488642 C47.5058357,19.0810026 48.4543466,18.9521409 49.1099676,19.1630167 C50.1627483,21.8077563 50.2565666,24.1947724 49.3901927,26.324188 C51.2390143,28.3136755 52.1640399,30.7245457 52.1640399,33.556307 C52.1640399,35.5455485 51.9232849,37.3062081 51.444357,38.8393922 C50.9648143,40.3728223 50.3449746,41.6006975 49.5845919,42.5256002 C48.8233486,43.4503799 47.8753296,44.2285916 46.7404118,44.8601125 C45.6052481,45.4921252 44.504759,45.9483056 43.4401742,46.2293914 C42.3750975,46.5104772 41.1758719,46.7217219 39.8420054,46.8621419 C41.0585683,47.9149226 41.6669728,49.5767225 41.6669728,51.846804 L41.6669728,59.2535257 C41.6669728,59.6742937 41.8132948,60.0255895 42.1061847,60.3063064 C42.3987058,60.5865315 42.8606653,60.6690374 43.492678,60.5516109 C48.922946,58.7498829 53.3521992,55.5026409 56.7806837,50.810008 C60.2087994,46.117744 61.923472,40.8347817 61.923472,34.9597686 C61.9222424,30.0695396 60.7162539,25.5590099 58.3067362,21.4281798 Z" id="Shape" fill="#FFFFFF"> </path> </g> </g> </g></svg>
+            </a>
+            </div>
+            <div class="w-[80px] h-[80px] bg-gray-100/50 py-2 pt-2 pb-0 rounded-[20px]  hover:scale-[1.1] duration-300 hover:bg-blue-200/60" onclick="toggleMail()">
+              <svg viewBox="-25.6 -25.6 307.20 307.20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="3.072"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M58.1818182,192.049515 L58.1818182,93.1404244 L27.5066233,65.0770089 L0,49.5040608 L0,174.59497 C0,184.253152 7.82545455,192.049515 17.4545455,192.049515 L58.1818182,192.049515 Z" fill="#4285F4"> </path> <path d="M197.818182,192.049515 L238.545455,192.049515 C248.203636,192.049515 256,184.224061 256,174.59497 L256,49.5040608 L224.844415,67.3422767 L197.818182,93.1404244 L197.818182,192.049515 Z" fill="#34A853"> </path> <polygon fill="#EA4335" points="58.1818182 93.1404244 54.0077618 54.4932827 58.1818182 17.5040608 128 69.8676972 197.818182 17.5040608 202.487488 52.4960089 197.818182 93.1404244 128 145.504061"> </polygon> <path d="M197.818182,17.5040608 L197.818182,93.1404244 L256,49.5040608 L256,26.2313335 C256,4.64587897 231.36,-7.65957557 214.109091,5.28587897 L197.818182,17.5040608 Z" fill="#FBBC04"> </path> <path d="M0,49.5040608 L26.7588051,69.5731646 L58.1818182,93.1404244 L58.1818182,17.5040608 L41.8909091,5.28587897 C24.6109091,-7.65957557 0,4.64587897 0,26.2313335 L0,49.5040608 Z" fill="#C5221F"> </path> </g> </g></svg>
+            </div>
+            <div class="absolute top-[370px] -left-[60px]  bg-black/70 text-white px-4 py-2 rounded-md z-10 hidden" id="mailDiv">
+              Email : jonas.garnero@gmail.com
+            </div>
+          </div>
+          <div class="flex space-x-[60px]">
+
+            <div class="w-[80px] h-[80px] bg-gray-100/50 p-2 rounded-[20px] hover:scale-[1.1] duration-300 hover:bg-blue-200/60" onclick="togglePhone()">
+              <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M834.133333 149.333333h-78.933333C473.6 153.6 151.466667 514.133333 149.333333 755.2v78.933333c0 21.333333 17.066667 40.533333 40.533334 40.533334l160-2.133334c21.333333 0 40.533333-19.2 40.533333-40.533333l4.266667-174.933333-100.266667-85.333334c0-55.466667 224-279.466667 281.6-281.6l91.733333 100.266667 168.533334-4.266667c21.333333 0 40.533333-19.2 40.533333-40.533333L874.666667 189.866667c0-23.466667-17.066667-40.533333-40.533334-40.533334z" fill="#009688"></path></g></svg>
+            </div>
+            <div class="absolute top-[300px] -left-[20px] bg-black/70 text-white px-4 py-2 rounded-md z-10 hidden" id="phoneDiv">
+              Numéro : 0783952234
+            </div>
+            <div class="w-[80px] h-[80px] bg-gray-100/50 p-2 rounded-[20px]  hover:scale-[1.1] duration-300 hover:bg-blue-200/60">
+              <a target="_blank" href="https://www.linkedin.com/in/jonas-garnero-9ab3a9241/">
+              <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"></path></g></svg> 
+            </a>
+            </div>
+
+          </div>
+        </div>
           </div>
       </div>
   </section>
   
-  <script src="script.js"></script>
+  
 </div>
+<script src="script.js"></script>
 </body>
 </html>
