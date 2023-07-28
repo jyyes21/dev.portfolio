@@ -1,19 +1,4 @@
-let prevScrollpos = window.pageYOffset;
 
-window.onscroll = function() {
-  let currentScrollPos = window.pageYOffset;
-  const navbar = document.getElementById("navbar");
-
-  if (prevScrollpos > currentScrollPos) {
-    // Scroll vers le haut, afficher la barre de navigation avec une animation
-    navbar.style.transform = "translateY(0)";
-  } else {
-    // Scroll vers le bas, masquer la barre de navigation avec une animation
-    navbar.style.transform = `translateY(-${navbar.offsetHeight}px)`;
-  }
-
-  prevScrollpos = currentScrollPos;
-};
 
 
 
@@ -119,4 +104,107 @@ function pauseVideoTroc() {
       mailDiv.classList.add("hidden"); // Hide the message div
     }
   }
+
+
+
+
+
+
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Sélectionnez l'élément .typing-animation
+    const typingAnimation = document.querySelector('.typing-animation');
+  
+    // Définir le texte complet à afficher
+    const fullText = "Développeur full stack";
+  
+    // Fonction pour démarrer l'animation de saisie
+    function startTypingAnimation() {
+      typingAnimation.textContent = ''; // Réinitialiser le contenu
+      let i = 0;
+  
+      // Fonction pour afficher les caractères un par un
+      function typeNextCharacter() {
+        if (i < fullText.length) {
+          typingAnimation.textContent += fullText.charAt(i);
+          i++;
+          setTimeout(typeNextCharacter, 100); // Délai entre chaque caractère (100 millisecondes ici)
+        } else {
+          // Ajouter une pause de 2 secondes après que le texte soit entièrement écrit
+          setTimeout(resetTypingAnimation, 2000); // 2000 millisecondes = 2 secondes
+        }
+      }
+  
+      // Lancer la saisie de caractères
+      typeNextCharacter();
+    }
+  
+    // Fonction pour réinitialiser l'animation
+    function resetTypingAnimation() {
+      // Supprimer les caractères un par un pour obtenir l'effet de retour de l'animation
+      let i = fullText.length;
+      function deleteNextCharacter() {
+        if (i >= 0) {
+          typingAnimation.textContent = fullText.substring(0, i);
+          i--;
+          setTimeout(deleteNextCharacter, 100); // Délai entre chaque caractère (100 millisecondes ici)
+        } else {
+          // Une fois que le texte est entièrement effacé, relancer l'animation de saisie
+          setTimeout(startTypingAnimation, 1000); // Délai de 1 seconde avant de redémarrer l'animation
+        }
+      }
+  
+      // Démarrer la suppression de caractères
+      deleteNextCharacter();
+    }
+  
+    // Démarrer l'animation de saisie au chargement de la page
+    startTypingAnimation();
+  });
+  
+
+
+
+
+
+
+
+
+
+
+
+// Fonction pour faire défiler vers le haut lorsque le bouton est cliqué
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+let prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  const navbar = document.getElementById("navbar");
+
+  if (prevScrollpos > currentScrollPos) {
+    // Scroll vers le haut, afficher la barre de navigation avec une animation
+    navbar.style.transform = "translateY(0)";
+  } else {
+    // Scroll vers le bas, masquer la barre de navigation avec une animation
+    navbar.style.transform = `translateY(-${navbar.offsetHeight}px)`;
+  }
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scrollToTopBtn").classList.add("show");
+  } else {
+    document.getElementById("scrollToTopBtn").classList.remove("show");
+  }
+
+  prevScrollpos = currentScrollPos;
+};
+
+
+
+
 
