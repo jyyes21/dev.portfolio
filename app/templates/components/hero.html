@@ -1,26 +1,84 @@
-    <!-- Section de présentation -->
-    <section id="home" class="z-2 py-40 px-8 h-[975px] mx-auto flex pt-[300px]">
-        <div class="flex flex-col w-1/2 pl-4">
-            <div class="flex flex-col  leading-[100px] mt-8  ml-[200px]">
-                <p class="z-2 relative tracking-[.40em] text-gray-800 text-[30px]">Bonjour, je suis</p>
-                <p class="z-2 relative text-[180px] font-bold text-blue-600 tracking-[.07em]">JONAS</p>
-                <div class="typing-animation-container pt-12">
-                    <p class="typing-animation z-2 relative tracking-[.40em] text-black text-[45px]">Développeur full
-                        stack</p>
-                </div>
+<!-- Section de présentation -->
+<section id="home" class="z-2 py-40 px-8 h-[975px] mx-auto flex pt-[300px]">
+    <div class="flex flex-col w-1/2 pl-4">
+        <div class="flex flex-col  leading-[100px] mt-8  ml-[200px]">
+            <p class="z-2 relative tracking-[.40em] text-gray-800 text-[30px]">Bonjour, je suis</p>
+            <p class="z-2 relative text-[180px] font-bold text-blue-600 tracking-[.07em]">JONAS</p>
+            <div class="typing-animation-container pt-12">
+                <p class="typing-animation z-2 relative tracking-[.40em] text-black text-[45px]">Développeur full
+                    stack</p>
             </div>
         </div>
+    </div>
 
-        <div class="relative animate-float z-50 flex w-1/2 item-center justify-center">
-            <div class=" absolute -top-[150px] w-[500px] h-[650px] overflow-hidden rounded-[95px] border-4 border-blue-500 shadow-blue-neon">
-                <img class="" src="{{ url_for('static', filename='img/_DSC5677.JPG') }}" alt="photo.jpg">
-            </div>
-            <div class="text-[30px] text-gray-200 font-semibold relative z-0 absolute -top-[110px] left-0">
-                <div class="py-3 px-4 bg-gray-600/50 rounded-[25px] drop-shadow-[0_0px_10px_rgba(255,255,255,0.40)]"
-                     id="color-change-text">Bienvenue sur mon portfolio
-                </div>
+    <div class="relative animate-float z-50 flex w-1/2 item-center justify-center">
+        <div class=" absolute -top-[150px] w-[500px] h-[650px] overflow-hidden rounded-[95px] border-4 border-blue-500 shadow-blue-neon">
+            <img class="" src="{{ url_for('static', filename='img/_DSC5677.JPG') }}" alt="photo.jpg">
+        </div>
+        <div class="text-[30px] text-gray-200 font-semibold relative z-0 absolute -top-[110px] left-0">
+            <div class="py-3 px-4 bg-gray-600/50 rounded-[25px] drop-shadow-[0_0px_10px_rgba(255,255,255,0.40)]"
+                 id="color-change-text">Bienvenue sur mon portfolio
             </div>
         </div>
+    </div>
 
 
-    </section>
+</section>
+
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Sélectionnez l'élément .typing-animation
+    const typingAnimation = document.querySelector('.typing-animation');
+
+    // Définir le texte complet à afficher
+    const fullText = "Développeur full stack";
+
+    // Fonction pour démarrer l'animation de saisie
+    function startTypingAnimation() {
+      typingAnimation.textContent = ''; // Réinitialiser le contenu
+      let i = 0;
+
+      // Fonction pour afficher les caractères un par un
+      function typeNextCharacter() {
+        if (i < fullText.length) {
+          typingAnimation.textContent += fullText.charAt(i);
+          i++;
+          setTimeout(typeNextCharacter, 100); // Délai entre chaque caractère (100 millisecondes ici)
+        } else {
+          // Ajouter une pause de 2 secondes après que le texte soit entièrement écrit
+          setTimeout(resetTypingAnimation, 2000); // 2000 millisecondes = 2 secondes
+        }
+      }
+
+      // Lancer la saisie de caractères
+      typeNextCharacter();
+    }
+
+    // Fonction pour réinitialiser l'animation
+    function resetTypingAnimation() {
+      // Supprimer les caractères un par un pour obtenir l'effet de retour de l'animation
+      let i = fullText.length;
+      function deleteNextCharacter() {
+        if (i >= 0) {
+          typingAnimation.textContent = fullText.substring(0, i);
+          i--;
+          setTimeout(deleteNextCharacter, 100); // Délai entre chaque caractère (100 millisecondes ici)
+        } else {
+          // Une fois que le texte est entièrement effacé, relancer l'animation de saisie
+          setTimeout(startTypingAnimation, 1000); // Délai de 1 seconde avant de redémarrer l'animation
+        }
+      }
+
+      // Démarrer la suppression de caractères
+      deleteNextCharacter();
+    }
+
+    // Démarrer l'animation de saisie au chargement de la page
+    startTypingAnimation();
+  });
+
+</script>
+
+<style>
+    /* Met le css correspondant au hero ici */
+</style>

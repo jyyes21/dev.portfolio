@@ -174,3 +174,45 @@
             </div>
         </div>
     </section>
+
+
+<script>
+    var originalPlaybackRate; // Variable pour stocker la vitesse de lecture originale de la vidéo
+
+function playVideoOpkod() {
+  var video = document.getElementById("video-opkod");
+  if (!originalPlaybackRate) {
+    originalPlaybackRate = video.playbackRate; // Sauvegarde de la vitesse de lecture originale
+  }
+  video.playbackRate = 2.0; // Définition de la vitesse de lecture à 2x
+  video.play();
+}
+
+function pauseVideoOpkod() {
+  var video = document.getElementById("video-opkod");
+  video.playbackRate = originalPlaybackRate; // Restauration de la vitesse de lecture originale
+  video.pause();
+}
+
+var originalPlaybackRate; // Variable pour stocker la vitesse de lecture originale de la vidéo
+
+function playVideoTroc() {
+  var video = document.getElementById("video-Troc");
+  if (!originalPlaybackRate) {
+    originalPlaybackRate = video.playbackRate; // Sauvegarde de la vitesse de lecture originale
+  }
+  video.playbackRate = 2.0; // Définition de la vitesse de lecture à 2x
+  video.play();
+}
+
+function pauseVideoTroc() {
+  var video = document.getElementById("video-Troc");
+  video.playbackRate = originalPlaybackRate; // Restauration de la vitesse de lecture originale
+  video.pause();
+}
+</script>
+
+
+<style>
+    /* Met le css correspondant à la page projects ici */
+</style>
