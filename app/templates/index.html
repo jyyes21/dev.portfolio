@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="{{ url_for('static', filename='js/script.j') }}"></script>
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
@@ -18,7 +19,7 @@
 {% include './components/header.html' %}
 
 
-<body class="z-100 bg-gradient-to-l from-purple-300 to-blue-300 overflow-x-hidden">
+<body class="z-100 bg-gradient-to-l from-purple-300 to-blue-300 w-[100vw] overflow-x-hidden">
 
 
 <button id="scrollToTopBtn"
@@ -108,7 +109,7 @@
     </svg>
 </button>
 
-<div class="z-0 opacity-10 overflow-hidden bg-[url('https://cdn.discordapp.com/attachments/1130776962495950940/1131654995931037838/growth_10364222.png')] absolute  -left-[60px] top-[220px] w-[1200px] h-[755px] bg-cover">
+<div  class="z-0 opacity-10 overflow-hidden bg-[url('https://cdn.discordapp.com/attachments/1130776962495950940/1131654995931037838/growth_10364222.png')] absolute  -left-[60px] top-[220px] w-[1200px] h-[755px] bg-cover">
 </div>
 
 
@@ -128,7 +129,12 @@
 
 
 </div>
-<script src="script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script>
   // Enhanced Particle Animation Configuration
