@@ -1,26 +1,64 @@
 <section id="apropos" class="bg-gradient-to-r from-purple-300 to-blue-300 drop-shadow-[0_5px_15px_rgba(0,0,0,0.20)]">
-    <div id="particles-js" class="absolute w-full h-[965px]"></div>
+  <div id="particles-js" class="absolute w-full h-[965px]"></div>
 
-    <div class="py-[300px] bg-gradient-to-r from-purple-300 to-blue-300 px-20 flex">
-
-
-  <div class=" mx-auto w-1/2">
-    <div data-aos="zoom-out-right" data-aos-delay="200" data-aos-duration="400" class="drop-shadow-[0_5px_15px_rgba(0,0,0,0.20)] bg-white flex flex-col max-w-[750px] px-20 py-12 mx-auto rounded-[40px]">
-      <h2 class="text-[50px] font-bold mb-4">À propos de moi</h2>
-      <div class="">
-          <p class="text-gray-700 text-justify max-w-[700px] text-[20px]">
-          Je suis Jonas Garnero, un développeur Full Stack en BTS SIO. Passionné par la technologie, je crée des applications web fonctionnelles et attrayantes. Toujours avide de défis techniques, je suis constamment à l'affût des dernières tendances en développement. Prêt à collaborer dans un environnement dynamique, je suis ouvert aux opportunités passionnantes.
-          </p>
+  <div class="bg-gradient-to-r from-purple-300 to-blue-300 py-[200px] lg:py-[200px] flex justify-center sm:mx-0 mx-3">
+    <div class="flex flex-col lg:flex-row space-y-4 lg:max-w-full md:max-w-[900px] lg:max-w-[650px] max-w-[400px] sm:space-x-6">
+        <div class="lg:mx-auto max-w-full lg:max-w-1/2 lg:my-auto">
+            <div data-aos="zoom-out-right" data-aos-delay="200" data-aos-duration="400"
+                class="drop-shadow-[0_5px_15px_rgba(0,0,0,0.20)] bg-white flex flex-col max-w-[650px] px-4 lg:px-20 py-12 mx-auto rounded-[40px]">
+                <h2 class="text-2xl lg:text-[40px] font-bold mb-4">À propos de moi</h2>
+                <div>
+                    <p class="text-gray-700 text-justify max-w-[600px] text-[16px]">
+                        Je suis Jonas Garnero, un développeur Full Stack en BTS SIO. Passionné par la technologie,
+                        je crée des applications web fonctionnelles et attrayantes. Toujours avide de défis techniques,
+                        je suis constamment à l'affût des dernières tendances en développement. Prêt à collaborer dans
+                        un environnement dynamique, je suis ouvert aux opportunités passionnantes.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-     </div>
 
-     <div class=" mx-auto w-1/2">
-
-      
+        <div class="lg:mx-auto max-w-full lg:max-w-1/2 hidden sm:block">
+            <div class="card mx-auto" data-aos="zoom-out-right" data-aos-delay="600" data-aos-duration="500">
+                <div class="card2">
+                    <div class="flex justify-center items-center "> <!-- Ajustez la hauteur souhaitée ici -->
+                        <img class="object-contain rounded-[20px]" src="{{ url_for('static', filename='img/_DSC5677.JPG') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
 
-  </div>
 
 </section>
+
+<style>
+  .card {
+      width: 100%;
+      max-width: 400px;
+      height: 550px;
+      background-image: linear-gradient(163deg, #00f2ff 0%, #b306fe 100%);
+      border-radius: 10px;
+      transition: all .3s;
+  }
+
+  .card2 {
+      width: 100%;
+      max-width: 400px;
+      height: 550px;
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      transition: all .2s;
+  }
+
+  .card2:hover {
+      transform: scale(0.97);
+      border-radius: 10px;
+  }
+
+  .card:hover {
+      box-shadow: 0px 0px 60px 6px rgba(0, 234, 255, 0.6);
+  }
+</style>

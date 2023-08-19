@@ -43,22 +43,6 @@ html {
 
 
 
-
-
-
-
-
-/* Créer l'effet de brillance néon bleu */
-.shadow-blue-neon {
-box-shadow: 0 0 20px #00BFFF;
-}
-
-
-
-
-
-
-
 #scrollToTopBtn {
 transition: opacity 0.3s;
 }
